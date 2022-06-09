@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './Portfolio/Home/Header';
+import app from './firebase.init';
 import {
   BrowserRouter as Router,
   Switch,
