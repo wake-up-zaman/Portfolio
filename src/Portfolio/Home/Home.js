@@ -6,23 +6,27 @@ const Home = () => {
         <>
             <section className='home'>
                 <div className='container flex'>
-                    <div className='left'>
-                        <div className='img'>
-                            <img className='banner' src={banner} alt=''></img>
-                        </div>
-                    </div>
+
                     <div className='right topMargin'>
                         <h1>
                             I AM A <br />
                             Front End Engineer
                         </h1>
                         <div className='socialIcon'>
-                            <i className='fab fa-facebook'></i>
-                            <i className='fab fa-facebook'></i>
-                            <i className='fab fa-facebook'></i>
-                            <i className='fab fa-facebook'></i>
+                            <i className='fab fa-facebook-f facebook'></i>
+                            <i className='fab fa-instagram instagram'></i>
+                            <i className='fab fa-github github'></i>
+                            <i className='fab fa-linkedin linkedin'></i>
+                        </div>
+                        <p>Seeking for a Junior Front-End Engineer position in a fast-growing organization to utilize expertise in web application development.Building state-of-the-art, easy-to-use, user-friendly websites and applications is truly a passion of mine. Coming with well-honed skills in information technology in addition to excellent communication skills.Staying up-to-date on industry trends, advancements and actively seek out new technologies.</p>
+                        <button className='primary-btn1 primary-btn2'>Download Resume</button>
+                    </div>
+                    <div className='left'>
+                        <div className='img'>
+                            <img className='banner' src={banner} alt=''></img>
                         </div>
                     </div>
+                    
                 </div>
             </section>
         </>

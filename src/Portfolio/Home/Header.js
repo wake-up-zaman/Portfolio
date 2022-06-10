@@ -8,14 +8,14 @@ const Header = () => {
 
     window.addEventListener("scroll",function (){
         const header=document.querySelector(".header");
-        header.classList.toggle('active', window.screenY > 200)
+        header.classList.toggle('active', window.scrollY > 200)
     })
     return (
         <>
             <header className='header'>
                 <div className='container flex'>
                     <div className='logo'>
-                        <img src='' alt=''></img>
+ 
                         <h1>Portfolio</h1>
                     </div>
                     <div className='nav'>
