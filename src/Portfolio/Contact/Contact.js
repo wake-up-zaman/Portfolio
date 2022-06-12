@@ -9,10 +9,12 @@ const Contact = () => {
     const form = useRef();
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
+    const [message, setMessage] = useState('');
     const sendEmail = (e) => {
         e.preventDefault();
         setFirstName('');
         setLastName('');
+        setMessage('');
         emailjs.sendForm('service_3s2yuvg', 'template_hilnpyk', form.current, 'hIkxuxHMLHtquZL-x')
             .then((result) => {
                 if(result){
@@ -61,6 +63,7 @@ const Contact = () => {
                                     name="user_name"
                                     placeholder='Name'
                                     onChange={event => setFirstName(event.target.value)}
+                                    value={firstName}
                                 />
                             </Col>
                             <Col lg='6' className='form-group'>
@@ -71,6 +74,7 @@ const Contact = () => {
                                     name="user_email"
                                     placeholder='Email'
                                     onChange={event => setLastName(event.target.value)}
+                                    value={lastName}
                                 />
                             </Col>
                         </Row>
@@ -78,6 +82,8 @@ const Contact = () => {
                             id='message'
                             name="message"
                             placeholder='Message'
+                            onChange={event => setMessage(event.target.value)}
+                            value={message}
                             rows='5'
                         ></textarea>
                         <br />
