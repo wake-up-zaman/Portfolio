@@ -3,7 +3,7 @@ import about from '../Images/last 4.jpg';
 const About = () => {
     const data = [
         {
-            title: "Who I Am",
+            title: "",
             desc1: "I am interested in computer and information technology.That is why I chose my undergraduate studies on IT.",
             desc2: "Now I am studying Information And Communication Engineering (ICE) at Bangladesh University Of Professionals.Building state-of-the-art, easy-to-use, user-friendly websites and applications is truly a passion of mine. Coming with well-honed skills in information technology in addition to excellent communication skills.Staying up-to-date on industry trends, advancements and actively seek out new technologies.",
             desc3: "I am a person who is positive about every aspect of life.There are many things I like to do, to see,and to experience.",
@@ -25,7 +25,7 @@ const About = () => {
                                 </div>
                                 <div className='left mtop'>
                                     <div className='heading'>
-                                        <h3>About Me</h3>
+                                        <h3 className='fs-4 text-center'>About Me</h3>
                                         <h1>{val.title}</h1>
                                     </div>
                                     <p>{val.desc1}</p>

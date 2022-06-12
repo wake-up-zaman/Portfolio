@@ -20,9 +20,9 @@ const Skills = () => {
 
 
         <div class='inner'>
-            <div class="header2">
-                <h1>My Skills</h1>
-            </div>
+        <div className="header2">
+                    <h2 className='text-center'>MY SKILLS</h2>
+                </div>
             <div class='container2'>
                 <div class='skill-box'>
                     <div class='skill-title'>

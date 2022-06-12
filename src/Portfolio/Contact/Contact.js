@@ -1,68 +1,98 @@
-import React from 'react';
-import { Container,Row,Col } from 'react-bootstrap';
-
+import React, { useRef, useState } from 'react';
+import { Container, Row, Col} from 'react-bootstrap';
+import { RiSendPlaneFill } from "react-icons/ri";
+import emailjs from '@emailjs/browser';
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 const Contact = () => {
+    const form = useRef();
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setFirstName('');
+        setLastName('');
+        emailjs.sendForm('service_3s2yuvg', 'template_hilnpyk', form.current, 'hIkxuxHMLHtquZL-x')
+            .then((result) => {
+                if(result){
+                    console.log('sent');
+                    toast.success("Message is Sent!");
+                }
+                else{
+                    toast.error("Message does not sent!");
+                }
+            });
+    };
     return (
+
         <Container>
-            <Row className="mb-5 mt-3">
-                <Col lg='8'>
-                    <h1 className='display-4 mb-4'>
-                        Contact Me
-                    </h1>
+            <Row className="mb-5 mt-5">
+                <Col lg='12'>
+                    <h2 className='mb-4 text-center uppercase'>
+                        CONTACT ME
+                    </h2>
                 </Col>
             </Row>
             <Row className="sec_sp contact-1">
-                <Col lg='5' className="mb-5">
-                    <h3 className='color_sec py-4'>Get In touch</h3>
+                <Col lg='5' className="">
+                    <h3 className='color_sec'>Get In touch</h3>
                     <address>
-                        <strong>Email: hadiuzzaman527@gmail.com</strong>
-                        <br />
-                        <br />
+                        <p>
+                            <strong>Email: hadiuzzaman527@gmail.com</strong>
+                        </p>
                         <p>
                             <strong>Phone: +8801799199335</strong>
+                        </p>
+                        <p>
+                            <strong>Address: Mirpur-12,Dhaka-1216,Bangladesh</strong>
                         </p>
                     </address>
                     <p></p>
                 </Col>
                 <Col lg='7' className='d-flex align-items-center'>
-                <form className='contact_form w-100'>
+                    <form ref={form} onSubmit={sendEmail} className='contact_form w-100'>
                         <Row className='mb-2'>
                             <Col lg='6' className='form-group'>
                                 <input
                                     className='form-control mb-2'
                                     id='name'
-                                    name='name'
+                                    type="text"
+                                    name="user_name"
                                     placeholder='Name'
-                                    type='text'
-                                    />
+                                    onChange={event => setFirstName(event.target.value)}
+                                />
                             </Col>
                             <Col lg='6' className='form-group'>
                                 <input
                                     className='form-control rounded-0'
                                     id='email'
-                                    name='email'
+                                    type="email" 
+                                    name="user_email"
                                     placeholder='Email'
-                                    type='email'
-                                    />
+                                    onChange={event => setLastName(event.target.value)}
+                                />
                             </Col>
                         </Row>
                         <textarea className='form-control rounded-0'
-                        id='message'
-                        name='message'
-                        placeholder='Message'
-                        rows='5'
+                            id='message'
+                            name="message"
+                            placeholder='Message'
+                            rows='5'
                         ></textarea>
-                        <br/>
+                        <br />
                         <Row>
                             <Col lg='12' className='form-group'>
-                                <button className='primary-btn3 primary-btn4 mb-4' type="submit">Send</button>
-                                
+                                <button className='primary-btn3 primary-btn4 mb-4 fs-6 rounded' type="submit" value="Send">Send <RiSendPlaneFill className='ms-2 send' /></button>
+
                             </Col>
                         </Row>
                     </form>
                 </Col>
             </Row>
+           <ToastContainer/>
         </Container>
+
     );
 };
 

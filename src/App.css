@@ -14,7 +14,7 @@ body{
 
 }
 .logo3 h2{
-  color:#fff;
+  color: #2ecc71;
 }
 .flex{
   display: flex;
@@ -139,6 +139,13 @@ header ul li a:hover{
 .linkedin:hover{
   background-color: #4267b2;
 }
+.twitter{
+  color:#4267b2;
+  border: 1px solid #4267b2;
+}
+.twitter:hover{
+  background-color: #4267b2;
+}
 .primary-btn1{
   background: none;
   outline: none;
@@ -155,7 +162,8 @@ header ul li a:hover{
   background: #595a59;
 }
 .primary-btn2:hover{
-  background: #f54ea2;
+  background: #2ecc71;
+  color:#fff;
   box-shadow: 0 13px 27px 0 rgb(245 78 162 / 25%);
 }
 .home .right{
@@ -170,6 +178,11 @@ header ul li a:hover{
 p{
   color: #6185a5;
   line-height: 30px;
+}
+.down{
+  height:50px;
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 /*-------Branding----------*/
@@ -207,7 +220,7 @@ p{
 .about-img{
   width:400px;
   height:500px;
-  /* border-radius: 50px; */
+  border-radius: 50px;
   margin-top: 110px;
 }
 .mtop{
@@ -261,10 +274,10 @@ h3{
 }
 .primary-btn4{
   padding: 15px 40px;
-  background: #13c513;
+  background: #595a59;
 }
 .primary-btn4:hover{
-  background: #f54ea2;
+  background: #2ecc71;
   box-shadow: 0 13px 27px 0 rgb(245 78 162 / 25%);
 }
 
@@ -311,12 +324,12 @@ h3{
   margin-top: 100px;
 }
 .inner{
-  padding-top:20px;
+  padding-top:10px;
 }
 .header2{
   text-align: center;
-  color: #fff;
-  padding: 1rem;
+  color: #2ecc71;
+  padding: 10px;
   position: relative;
 }
 .header2:after{
@@ -327,7 +340,7 @@ h3{
   transform: translateX(-50%);
   height:4px;
   width:100px;
-  background-color: #2ecc71;
+  background-color: #fff;
 
 }
 .container2{
@@ -418,13 +431,13 @@ h3{
 
 .work{
   background-color: #08071c;
-  padding: 40px 0;
-  height: 170vh;
+  padding: 0px 0;
+  height: 150vh;
 }
 .work .heading{
   text-align:center;
   color:#fff;
-  padding: 50px 0;
+  padding: 0px 0;
 }
 .services-container{
   display:grid;
@@ -498,8 +511,14 @@ margin-left: 30px;
 }
 /*------Contact Me--------*/
 
-
-
+.color_sec{
+  font-size: 25px;
+}
+.send{
+  color:#fff;
+  height:20px;
+  font-size: 20px;
+}
 
 @media screen and (max-width:768px){
   header.icon{

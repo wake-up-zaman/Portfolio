@@ -21,9 +21,9 @@ const Header = () => {
                     <div className='nav'>
                         <ul className={sidebar ? "nav-links-sidebar" : "nav-links"} onClick={()=> setSidebar(false)}>
                             <li><Link to='/'>Home</Link></li>
-                            <li><Link to='/pages'>Pages</Link></li>
                             <li><Link to='/blogs'>Blogs</Link></li>
-                            <li><Link to='/portfolio'>Portfolio</Link></li>
+                            <li><Link to='/projects'>Projects</Link></li>
+                            <li><Link to='/about'>About</Link></li>
                             <li><Link to='/contact'>Contact</Link></li>
                             <li className='icon'>
                                 <FaSearch className='HeaderIcon'/>

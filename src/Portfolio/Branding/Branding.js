@@ -6,17 +6,17 @@ const Branding = () => {
         {
             id: '01',
             heading: 'Mission',
-            desc: 'LeaderShip is an important skill for many positions. Depending on the specific job, it might involve creating formal agreements'
+            desc: 'Establish my skills and knowledge in the corporate world.Depending on the specific job, it might involve creating formal agreements.'
         },
         {
             id: '02',
             heading: 'Vision',
-            desc: 'Teamwork is an important skill for many positions. Depending on the specific job, it might involve creating formal agreements'
+            desc: 'Skilled myself as if well established software company willing to hire me  and get ready to go abroad for higher study.'
         },
         {
             id: '03',
-            heading: 'Life Goal',
-            desc: 'Negotiation is an important skill for many positions. Depending on the specific job, it might involve creating formal agreements'
+            heading: 'Goals',
+            desc: 'Become a Software Engineer and build a Startup.I want to become a successful Web Developer and help the organization where I will work.'
         }
     ]
     return (

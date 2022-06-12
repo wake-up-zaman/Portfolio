@@ -5,6 +5,7 @@ import HomePage from './Portfolio/Home/HomePage';
 import { Route, Routes } from 'react-router-dom';
 import Blogs from './Portfolio/Blogs/Blogs';
 import ProjectDetails from './Portfolio/Project/ProjectDetails';
+import { ToastContainer } from 'react-bootstrap';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/inventory/:_id' element={<ProjectDetails></ProjectDetails>}></Route>
         </Routes>
-        
+        <ToastContainer />
     </div>
 
     </>
