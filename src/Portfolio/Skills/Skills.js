@@ -24,6 +24,16 @@ const Skills = () => {
                     <h2 className='text-center'>MY SKILLS</h2>
                 </div>
             <div class='container2'>
+            <div class='skill-box'>
+                    <div class='skill-title'>
+                    <div class='skill-img'>
+                        <img src={c} alt='' className='skill-icon'/>
+                    </div>
+                    <h3>C++</h3>
+                   
+                    </div>
+                    <p className='level'>Expert</p>
+                </div>
                 <div class='skill-box'>
                     <div class='skill-title'>
                     <div class='skill-img'>
@@ -31,7 +41,7 @@ const Skills = () => {
                     </div>
                     <h3>Python</h3>
                     </div>
-                    <p className='level'>Expert</p>
+                    <p className='level'>Comfortable</p>
                 </div>
 
                 <div class='skill-box'>
@@ -44,16 +54,7 @@ const Skills = () => {
                     </div>
                     <p className='level'>Familiar</p>
                 </div>
-                <div class='skill-box'>
-                    <div class='skill-title'>
-                    <div class='skill-img'>
-                        <img src={c} alt='' className='skill-icon'/>
-                    </div>
-                    <h3>C++</h3>
-                   
-                    </div>
-                    <p className='level'>Expert</p>
-                </div>
+
                 <div class='skill-box'>
                     <div class='skill-title'>
                     <div class='skill-img'>
@@ -110,7 +111,7 @@ const Skills = () => {
                     <div class='skill-img'>
                         <img src={react} alt='' className='skill-icon'/>
                     </div>
-                    <h3>React.js</h3>
+                    <h3>React</h3>
                    
                     </div>
                     <p className='level'>Expert</p>
@@ -120,7 +121,7 @@ const Skills = () => {
                     <div class='skill-img'>
                         <img src={node} alt='' className='skill-icon'/>
                     </div>
-                    <h3>Node.js</h3>
+                    <h3>Node</h3>
                    
                     </div>
                     <p className='level'>Comfortable</p>
@@ -130,7 +131,7 @@ const Skills = () => {
                     <div class='skill-img'>
                         <img src={express} alt='' className='skill-icon'/>
                     </div>
-                    <h3>Express.js</h3>
+                    <h3>Express</h3>
                    
                     </div>
                     <p className='level'>Comfortable</p>

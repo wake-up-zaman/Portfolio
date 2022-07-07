@@ -159,7 +159,8 @@ header ul li a:hover{
 }
 .primary-btn2{
   padding: 15px 40px;
-  background: #595a59;
+  /* background: #595a59; */
+  background-color: #08071c;
 }
 .primary-btn2:hover{
   background: #2ecc71;
@@ -274,7 +275,8 @@ h3{
 }
 .primary-btn4{
   padding: 15px 40px;
-  background: #595a59;
+  /* background: #595a59; */
+  background-color: #08071c;
 }
 .primary-btn4:hover{
   background: #2ecc71;
@@ -320,7 +322,8 @@ h3{
 
 .skill{
   font-family: 'Roboto', sans-serif;
-  background-color: #333;
+  /* background-color: #333; */
+  background-color: #08071c;
   margin-top: 100px;
 }
 .inner{
@@ -426,6 +429,73 @@ h3{
   color: #fff;
   margin: 0.5rem;
 }
+
+/*-----------Education-------------*/
+
+.heading1{
+  text-align: center;
+  margin-top: 50px;
+}
+.education .box-container1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+.education .box-container1 .box{
+  width:27rem;
+  height: 250px;
+  margin: 4rem 1rem;
+  padding-left:4rem;
+  border-left: .2rem solid rgb(28, 165, 177);
+  position: relative;
+}
+.education .box-container1 .box span{
+  font-size: 1.3rem;
+  background-color: rgb(28, 165, 177);;
+  color: #fff;
+  border-radius: 5rem;
+  padding: .5rem 2.5rem;
+  position: absolute;
+  top: -20px;
+
+
+}
+.education .box-container1 .box i{
+  position: absolute;
+  top:-30px;
+  left: -30px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  line-height: 3.4rem;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(28, 165, 177);
+}
+
+.institute-name{
+  font-size: 20px;
+  margin-top: 30px;
+  color: #08071c;
+  font-weight: bold;
+}
+.degree{
+
+  font-size: 17px;
+  color: #08071c;
+}
+
+
+
+
+
+
+
+
 
 /*--------Project---------*/
 

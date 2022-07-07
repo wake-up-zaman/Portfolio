@@ -16,7 +16,7 @@ const Header = () => {
                 <div className='container flex'>
                     <div className='logo3'>
  
-                        <h2>Portfolio</h2>
+                        <h2>Hadiuzzaman's World</h2>
                     </div>
                     <div className='nav'>
                         <ul className={sidebar ? "nav-links-sidebar" : "nav-links"} onClick={()=> setSidebar(false)}>
@@ -25,11 +25,11 @@ const Header = () => {
                             <li><Link to='/projects'>Projects</Link></li>
                             <li><Link to='/about'>About</Link></li>
                             <li><Link to='/contact'>Contact</Link></li>
-                            <li className='icon'>
+                            {/* <li className='icon'>
                                 <FaSearch className='HeaderIcon'/>
                                 <MdOutlineWork className='HeaderIcon'/>
                                 <MdGridView className='HeaderIcon'/>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                     <button className='navbar-items-icon' onClick={()=> setSidebar(!sidebar)}>
