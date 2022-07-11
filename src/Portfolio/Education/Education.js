@@ -9,7 +9,7 @@ const Education = () => {
                     <i className='fas fa-graduation-cap'></i>
                     <span>2018-2021</span>
                     <p className='institute-name'>Bangladesh University of Professionals</p>
-                    <p className='degree'>BSc(Engg) in Information And Communication Engineering</p>
+                    <p className='degree'>BSc in Information And Communication Engineering</p>
                     <p className='degree'>CGPA: 3.25 Out of 4.00</p>
                     <p className='degree'>Club Activities: IEEE BUP Student Branch</p>
                 </div>

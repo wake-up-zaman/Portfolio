@@ -17,8 +17,8 @@ const Project = () => {
                     <h3 className='fs-4 mt-4'>My Works</h3>
                     <h1>Some of My Completed Projects</h1>
                 </div>
-                <div id='services' className='container'>
-                <div className='row'>
+                <div id='services' className='container-project'>
+                <div className='row1'>
                     <div className='services-container'>
                         {
                             project.map(pro => <Pro

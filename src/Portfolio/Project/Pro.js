@@ -1,19 +1,36 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Pro = ({pro}) => {
-    const {name,img1,des1,_id}=pro;
-    const navigate=useNavigate();
-    const navigateToCheckOut= _id=>{
+const Pro = ({ pro }) => {
+    const { name, img1, des1, _id } = pro;
+    const navigate = useNavigate();
+    const navigateToCheckOut = _id => {
         navigate(`/inventory/${_id}`)
     }
     return (
-        <div className='pro'>
-            <img className='w-100 service-img' src={img1} alt='' />
-            <h3 className='text-white'>{name}</h3>
-            <p><small>{des1}</small></p>
-            <button onClick={()=>navigateToCheckOut(_id)} className='btn btn-info text-light'>Details</button>
+        <div className='card'>
+        <div className='imgBx'>
+            <img className='w-100' src={img1} alt='' />
         </div>
+        <div className='contentBx'>
+            <div className='content-project'>
+                <h3>{name}</h3>
+                <p className=''><small>{des1}</small></p>
+
+                <div className='flex flex-nowrap'>
+                <button onClick={()=>navigateToCheckOut(_id)} className='btn btn-info mr-12 text-light'>Details</button>
+                <button onClick = {()=>navigateToCheckOut(_id)} className='btn btn-info text-light'>Live</button>
+                <button onClick = {()=>navigateToCheckOut(_id)} className='btn btn-info text-light'>Client-Side</button>
+                <button onClick = {()=>navigateToCheckOut(_id)} className='btn btn-info text-light'>Server-Side</button>
+                </div>
+            </div>
+
+        </div>
+   
+   
+   
+       
+    </div>
     );
 };
 
