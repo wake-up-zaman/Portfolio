@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 const Pro = ({ pro }) => {
@@ -19,9 +20,9 @@ const Pro = ({ pro }) => {
 
                 <div className='flex flex-nowrap'>
                 <button onClick={()=>navigateToCheckOut(_id)} className='btn btn-info mr-12 text-light'>Details</button>
-                <button onClick = {()=>navigateToCheckOut(_id)} className='btn btn-info text-light'>Live</button>
-                <button onClick = {()=>navigateToCheckOut(_id)} className='btn btn-info text-light'>Client-Side</button>
-                <button onClick = {()=>navigateToCheckOut(_id)} className='btn btn-info text-light'>Server-Side</button>
+                <button  className='btn btn-info text-light'><Link to="https://glowing-jalebi-853180.netlify.app/"></Link>Live</button>
+                <button  className='btn btn-info text-light'>Client-Side</button>
+                <button  className='btn btn-info text-light'>Server-Side</button>
                 </div>
             </div>
 

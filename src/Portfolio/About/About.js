@@ -4,9 +4,9 @@ const About = () => {
     const data = [
         {
             title: "",
-            desc1: "I am interested in computer and information technology.That is why I chose my undergraduate studies on IT.",
-            desc2: "Now I am studying Information And Communication Engineering (ICE) at Bangladesh University Of Professionals.Building state-of-the-art, easy-to-use, user-friendly websites and applications is truly a passion of mine. Coming with well-honed skills in information technology in addition to excellent communication skills.Staying up-to-date on industry trends, advancements and actively seek out new technologies.",
-            desc3: "I am a person who is positive about every aspect of life.There are many things I like to do, to see,and to experience.",
+            desc1: "I have recently graduated from Bangladesh University of Professionals with a BSc in Information & Communication Engineering. While there, I learned a lot of theory in subjects like data structure and  algorithm,  system design and analysis, web technologies and more.",
+            desc2: "In the last 6 month I have been trying to gather practical knowledge of programming and prepare myself for entering the software industry. I am learning MERN stack and finished some full stack projects.",
+            desc3: "While I don’t have any real-life work experience, I’ve had a lot of exposure to web development. Now, I’m looking to leverage everything I’ve learned in varsity and get some hands-on work experience. I want to become a successful Web Developer and help the organization where I will work.I am a person who is positive about every aspect of life.",
             cover: "../Images/about.jpg"
         }
     ]
@@ -28,9 +28,9 @@ const About = () => {
                                         <h3 className='fs-4 text-center'>About Me</h3>
                                         <h1>{val.title}</h1>
                                     </div>
-                                    <p>{val.desc1}</p>
-                                    <p>{val.desc2}</p>
-                                    <p>{val.desc3}</p>
+                                    <p className='des1'>{val.desc1}</p>
+                                    <p className='des2'>{val.desc2}</p>
+                                    <p className='des3'>{val.desc3}</p>
                                     <button className='primary-btn3 primary-btn4'>Hire Me</button>
                                 </div>
 

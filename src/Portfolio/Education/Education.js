@@ -15,7 +15,7 @@ const Education = () => {
                 </div>
                 <div className='box'>
                     <i className='fas fa-graduation-cap'></i>
-                    <span>2014-2017</span>
+                    <span>2014-2016</span>
                     <p className='institute-name'>Cantonment Public School And College,Rangpur</p>
                     <p className='degree'>Higher Secondary Certificate in Science</p>
 
