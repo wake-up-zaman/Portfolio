@@ -12,7 +12,7 @@ const Project = () => {
     }, [])
     return (
         <>
-            <section className='work mt-4'id='#projects'>
+            <section className='work mt-4'id='projects'>
                 <div className='heading p-4'>
                     <h3 className='fs-4 mt-4'>My Works</h3>
                     <h1>Some of My Completed Projects</h1>

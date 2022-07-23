@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 import about from '../Images/last 4.jpg';
 const About = () => {
     const data = [
@@ -12,12 +13,12 @@ const About = () => {
     ]
     return (
         <>
-            <section className='about topMargin'>
+            <section className='about topMargin' id='about2'>
 
                 {
                     data.map((val) => {
                         return (
-                            <div className='container flex'>
+                            <div className='container container-about flex'>
                                 <div className='right'>
                                     <div >
                                         <img className='about-img' src={about} alt="" />
@@ -31,7 +32,11 @@ const About = () => {
                                     <p className='des1'>{val.desc1}</p>
                                     <p className='des2'>{val.desc2}</p>
                                     <p className='des3'>{val.desc3}</p>
-                                    <button className='primary-btn3 primary-btn4'>Hire Me</button>
+                      
+                                    
+                                    <HashLink className='primary-btn3 primary-btn4 button-about' smooth to='#contact'>Hire Me
+                                        </HashLink>
+
                                 </div>
 
                             </div>

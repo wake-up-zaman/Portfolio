@@ -21,13 +21,25 @@ const Header = () => {
                     <div className='nav'>
                         <ul className={sidebar ? "nav-links-sidebar mobile-view" : "nav-links"} onClick={() => setSidebar(false)}>
                             <li><Link to='/'>Home</Link></li>
-                            <li><Link to='/blogs'>Blogs</Link></li>
+                            {/* <li><Link to='/blogs'>Blogs</Link></li> */}
+                            <li>
+                                <HashLink smooth to='/#about2'>About
+                                </HashLink></li>
+                            <li>
+                                <HashLink smooth to='/#skills'>Skills
+                                </HashLink></li>
                             <li>
                                 <HashLink smooth to="/#projects">
                                     Projects
                                 </HashLink></li>
-                            <li><Link to='/about'>About</Link></li>
-                            <li><Link to='/contact'>Contact</Link></li>
+
+                                <li>
+                                <HashLink smooth to='/blogs'>Blogs
+                                </HashLink></li>
+                            <li>
+                                <HashLink smooth to='/#contact'>Contact
+                                </HashLink></li>
+
                             {/* <li className='icon'>
                                 <FaSearch className='HeaderIcon'/>
                                 <MdOutlineWork className='HeaderIcon'/>

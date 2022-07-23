@@ -73,6 +73,7 @@ header ul li a:hover {
   display: none;
 }
 
+
 /* header.active{
   position:sticky;
   top:0;
@@ -122,15 +123,18 @@ header ul li a:hover {
 }
 
 .home h1 {
-  font-size: 60px;
+  font-size: 47px;
 
+}
+.title-mobile{
+  color: #FF8678;
 }
 
 .socialIcon i {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   text-align: center;
-  line-height: 35px;
+  line-height: 40px;
   margin-right: 10px;
   border-radius: 50%;
   transform: 0.5px;
@@ -142,17 +146,17 @@ header ul li a:hover {
 }
 
 .facebook {
-  color: #4267b2;
-  border: 1px solid #4267b2;
+  color: #0F90F3;
+  border: 1.5px solid #0F90F3;
 }
 
 .facebook:hover {
-  background-color: #4267b2;
+  background-color: #0F90F3;
 }
 
 .instagram {
   color: #e82636;
-  border: 1px solid #fc2525;
+  border: 1.5px solid #fc2525;
 }
 
 .instagram:hover {
@@ -161,7 +165,7 @@ header ul li a:hover {
 
 .github {
   color: #151a26;
-  border: 1px solid #181d28;
+  border: 1.5px solid #181d28;
 }
 
 .github:hover {
@@ -169,21 +173,21 @@ header ul li a:hover {
 }
 
 .linkedin {
-  color: #4267b2;
-  border: 1px solid #4267b2;
+  color: #0A66C2;
+  border: 1.5px solid #0A66C2;
 }
 
 .linkedin:hover {
-  background-color: #4267b2;
+  background-color: #0A66C2;
 }
 
 .twitter {
-  color: #4267b2;
-  border: 1px solid #4267b2;
+  color: #1D9BF0;
+  border: 1.5px solid #1D9BF0;
 }
 
 .twitter:hover {
-  background-color: #4267b2;
+  background-color: #1D9BF0;
 }
 
 .primary-btn1 {
@@ -341,6 +345,7 @@ h3 {
 .primary-btn4:hover {
   background: #2ecc71;
   box-shadow: 0 13px 27px 0 rgb(245 78 162 / 25%);
+  color: white;
 }
 
 .des1,.des2,.des3{
@@ -539,6 +544,14 @@ h3 {
   border-left: .2rem solid rgb(28, 165, 177);
   position: relative;
 }
+/* .education .box-container1 .box-33 {
+  width: 27rem;
+  height: 230px;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  border-left: .2rem solid rgb(28, 165, 177);
+  position: relative;
+} */
 
 .education .box-container1 .box span {
   font-size: 1.3rem;
@@ -850,7 +863,7 @@ h3 {
     left: 0px;
     top: 75px;
     transition: 0.5s;
-    width: 500px;
+    width: 390px;
     height: 30vh;
     z-index: 5;
 
@@ -884,19 +897,40 @@ h3 {
     width: 100%;
   }
 
-  .home .container {
+  .home .container-banner {
     flex-direction: column;
     flex-direction: column-reverse;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
   }
 
   .home {
-    height: 134vh;
+    height: 110vh;
   }
-
+  .home .right{
+    margin: 0px;
+  }
   .home .banner {
-    width: 100%;
+
     height: 100%;
     position: relative;
+    top:0px;
+    left:0px;
+    margin: 0px;
+  }
+  .title-mobile{
+    margin-left: 140px;
+    color: #FF8678;
+  }
+  .title2-mobile{
+    margin-left: 0px;
+    font-size: 32.5px;
+
+  }
+  .img{
+    display: flex;
+    justify-content: center;
   }
 
   .home img {
@@ -905,8 +939,50 @@ h3 {
     position: relative;
     transform: scale(1);
 
-  }
 
+  }
+  .topMargin{
+    margin: 0px;
+  }
+  .home h1{
+    font-size: 40px;
+  }
+  .home .socialIcon {
+    margin-left: 80px;
+  }
+  .des1-banner{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .title-button-mobile{
+    margin-left: 80px;
+  }
+  .para h2{
+    margin-left: 100px;
+  }
+  .des-branding{
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: justify;
+    text-justify: inter-word;
+
+  }
+  .mtop{
+    margin-top: 20px;
+  }
+  .container-about{
+    margin-top: 30px;
+  }
+  .about .left {
+    padding-right: 0px;
+}
+.button-about{
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.skill{
+  margin-top: 50px;
+}
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -919,8 +995,36 @@ h3 {
 
     width: 100%;
     height: 100%;
+    margin-top: 30px;
   }
-
+  .education .box-container1 .box-11 {
+    width: 27rem;
+    height: 280px;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid rgb(28, 165, 177);
+    position: relative;
+  }
+  .education .box-container1 .box-22 {
+    width: 27rem;
+    height: 310px;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid rgb(28, 165, 177);
+    position: relative;
+  }
+  .education .box-container1 .box-33 {
+    width: 27rem;
+    height: 270px;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid rgb(28, 165, 177);
+    position: relative;
+  }
+  .passing-year{
+    margin-left: 50px;
+    width: 120px;
+  }
   .service-body {
     margin-left: 0px;
     margin-right: 10px;

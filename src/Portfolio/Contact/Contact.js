@@ -28,7 +28,7 @@ const Contact = () => {
     };
     return (
 
-        <Container className='contact-mobile'>
+        <Container className='contact-mobile' id='contact'>
             <Row className="mb-5 mt-5">
                 <Col lg='12'>
                     <h2 className='mb-4 text-center uppercase'>

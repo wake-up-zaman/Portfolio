@@ -31,7 +31,7 @@ const Branding = () => {
                                 </div>
                                 <div className='para'>
                                     <h2>{value.heading}</h2>
-                                    <p className='des1'>{value.desc}</p>
+                                    <p className='des-branding des1'>{value.desc}</p>
                                 </div>
                             </div>
                         )

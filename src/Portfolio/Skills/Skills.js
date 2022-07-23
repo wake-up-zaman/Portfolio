@@ -16,7 +16,7 @@ import express from '../Images/Skills/express2.png'
 
 const Skills = () => {
     return (
-        <div className='skill'>
+        <div className='skill' id='skills'>
 
 
         <div class='inner'>
