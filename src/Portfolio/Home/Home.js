@@ -11,9 +11,9 @@ const Home = () => {
             <section className='home'>
                 <div className='container container-banner flex'>
                     <div className='right topMargin'>
-                        <h1>
+                        <h1 className='title-main-mobile'>
                             <span className='title-mobile'>I AM A </span><br />
-                            <span className='title2-mobile'>Junior Software Engineer</span>
+                            <span className='title2-mobile text-center'>Junior Software Engineer</span>
                         </h1>
                         <div className='socialIcon'>
                             <a href="https://www.linkedin.com/in/md-hadiuzzaman/">
@@ -36,7 +36,7 @@ const Home = () => {
                             
                             
                         </div>
-                        <p className='des1-banner des1'>Seeking for a Junior Front-End Engineer position in a fast-growing organization to utilize expertise in web application development.Building state-of-the-art, easy-to-use, user-friendly websites and applications is truly a passion of mine. Coming with well-honed skills in information technology in addition to excellent communication skills.Staying up-to-date on industry trends, advancements and actively seek out new technologies.</p>
+                        <p className='des1-banner des1'>Seeking for a Junior Software Engineer position in a fast-growing organization to utilize expertise in web application development.Building state-of-the-art, easy-to-use, user-friendly websites and applications is truly a passion of mine. Coming with well-honed skills in information technology in addition to excellent communication skills.Staying up-to-date on industry trends, advancements and actively seek out new technologies.</p>
                         <a href={pdf} download className='primary-btn1 primary-btn2 title-button-mobile'>Download Resume<FiDownload className='down' /></a>
                     </div>
                     <div className='left'>

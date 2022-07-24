@@ -127,6 +127,7 @@ header ul li a:hover {
 
 }
 .title-mobile{
+  
   color: #FF8678;
 }
 
@@ -559,8 +560,9 @@ h3 {
   ;
   color: #fff;
   border-radius: 5rem;
-  padding: .5rem 2.5rem;
+  padding: .5rem 3.5rem;
   position: absolute;
+  left: 200px;
   top: -20px;
 
 
@@ -863,13 +865,15 @@ h3 {
     left: 0px;
     top: 75px;
     transition: 0.5s;
-    width: 390px;
+
     height: 30vh;
     z-index: 5;
 
 
   }
-
+  .title-main-mobile{
+    text-align: center;
+  }
   .nav-links-sidebar {
     display: flex;
     flex-direction: column;
@@ -905,9 +909,7 @@ h3 {
     max-width: 100%;
   }
 
-  .home {
-    height: 110vh;
-  }
+
   .home .right{
     margin: 0px;
   }
@@ -920,11 +922,11 @@ h3 {
     margin: 0px;
   }
   .title-mobile{
-    margin-left: 140px;
+
     color: #FF8678;
   }
   .title2-mobile{
-    margin-left: 0px;
+
     font-size: 32.5px;
 
   }
@@ -948,7 +950,10 @@ h3 {
     font-size: 40px;
   }
   .home .socialIcon {
-    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .des1-banner{
     margin-left: 20px;
@@ -997,33 +1002,70 @@ h3 {
     height: 100%;
     margin-top: 30px;
   }
+  .education .box-container1 .box{
+    border-left: none;
+    padding: 0px;
+    
+  }
+  .education .box-container1 {
+    padding-left: 0px;
+  }
   .education .box-container1 .box-11 {
     width: 27rem;
     height: 280px;
     margin: 4rem 1rem;
-    padding-left: 4rem;
-    border-left: .2rem solid rgb(28, 165, 177);
+
+
     position: relative;
   }
   .education .box-container1 .box-22 {
     width: 27rem;
     height: 310px;
     margin: 4rem 1rem;
-    padding-left: 4rem;
-    border-left: .2rem solid rgb(28, 165, 177);
+
+
     position: relative;
   }
   .education .box-container1 .box-33 {
     width: 27rem;
     height: 270px;
-    margin: 4rem 1rem;
-    padding-left: 4rem;
-    border-left: .2rem solid rgb(28, 165, 177);
+    margin: 1rem 1rem;
+
+
     position: relative;
   }
   .passing-year{
     margin-left: 50px;
     width: 120px;
+  }
+  .education .box-container1 .box span {
+    font-size: 1.3rem;
+    background-color: rgb(28, 165, 177);
+    ;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 3.5rem;
+    position: absolute;
+    left: 70px;
+    top: -20px;
+  
+  
+  }
+  .education-heading1{
+    margin-bottom: 40px;
+  }
+  .education .box-container1 .box i {
+    position: absolute;
+    top: -80px;
+    left: 150px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 3.4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(28, 165, 177);
   }
   .service-body {
     margin-left: 0px;
@@ -1040,6 +1082,68 @@ h3 {
 @media only screen and (max-width:576px) {
   .contact-mobile{
     margin-top: 50px;
+  }
+
+}
+@media screen and (max-width:570px) {
+  .nav-links-sidebar {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    left: 0px;
+    top: 75px;
+    transition: 0.5s;
+    width: 100%;
+    height: 40vh;
+    z-index: 5;
+
+
+  }
+  .nav-links-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+  }
+  .home{
+    height: fit-content;
+  }
+  .home h1 {
+    font-size: 35px;
+  
+  }
+  .title2-mobile{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:560px) {
+  .nav-links-sidebar {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    left: 0px;
+    top: 75px;
+    transition: 0.5s;
+
+    height: fit-content;
+    z-index: 5;
+
+
+  }
+  .nav-links-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+  }
+
+  .home h1 {
+    font-size: 35px;
+  
+  }
+  .title2-mobile{
+    font-size: 30px;
+
   }
 
 }
